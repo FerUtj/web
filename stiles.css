@@ -1,0 +1,123 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(248, 245, 245);
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 1.8em;
+}
+p{
+    margin-bottom: 1.2em;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgb(42, 122, 175);
+    color: rgb(252, 246, 246);
+    padding: 1.9rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a{
+    color: rgb(252, 249, 249);
+    text-decoration: none;
+}
+
+.logo-nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+letter-spacing: 10px;
+font-size: 1.8em;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-incon {
+    display: none;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+    .navigation ul li a{
+        display: block;
+        padding: 0.2rm 0rem;
+        transition: all 0.8s linear;
+        border-radius: 10px;
+    }
+
+    .navigation ul li a:hover{
+        background:rgb(44, 4, 243);
+    }
+
+    .main{
+        padding-top: 5rem;
+    }
+    .footer{
+        background: #f2f2f2;
+        padding: 4rem 0;
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+
+@media only screen and (max-width:767px){
+    
+.menu-incon {
+    display: block;
+    cursor: pointer;
+}
+
+.navigation ul {
+    display: none;
+}
+
+
+.navigation ul.show{
+    display: block;
+}
+
+    .navigation {
+width: 100%;
+margin-top: 1rem;
+    }
+
+    .navigation ul li{
+        display: block;
+    }
+    
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rm 1rem;
+            transition: all 0.3s linear;
+            border-radius: 5px;
+        }
+    
+        .navigation ul li a:hover{
+            background:rgb(2, 0, 12);
+        }    
+}
+
+
