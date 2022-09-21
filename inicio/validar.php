@@ -8,17 +8,18 @@ $_SESSION['usuario']=$usuario;
 
 $conexion=mysqli_connect("localhost","root","","viajesoft_mide");
 
-$consulta="SELECT*FROM sysusr where nomusu='$usuario' and nompas='$contraseña'";
+$consulta="SELECT * FROM sysusr where nomusu='$usuario' and nompas='$contraseña'";
 $resultado=mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
 
-if($filas){
+if($filas>0){
   
     header("location:dashEval/index.html");
 
 }else{
-    ?>
+  //echo "Error de autentificacion";
+  ?>
     <?php
     include("index.html");
 

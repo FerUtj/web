@@ -7926,9 +7926,14 @@ button.bg-dark:focus {
   text-align: right !important; }
 
 .text-center {
-  text-align: center !important; }
+  padding: -10px 1%;
+  text-align: center !important;
+  margin: 10% ;
+  text-align:justify;
+  margin-right: 10%;
+}
 
-@media (min-width: 576px) {
+@media (min-width: 850px) {
   .text-sm-left {
     text-align: left !important; }
   .text-sm-right {
@@ -8211,12 +8216,13 @@ h1, h2, h3, h4, h5,
         border-color: #000; }
 
 .form-group {
-  position: relative; }
+  position: relative;
+color: white; }
 
 .field-icon {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 30px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -8268,7 +8274,7 @@ textarea.form-control {
   display: block;
   position: relative;
   padding-left: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
